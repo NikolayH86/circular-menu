@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="../css/context-menu.css">
+    <link rel="stylesheet" href="css/override.css">
+    <script src="js/underscore.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="../js/radial-context-menu.js"></script>
+    <script src="js/init.js"></script>
+
+    <script>
+        window.onload = function() {
+            ContextMenuManager.setMenuContainer($('nav'));
+            $('body').on('contextmenu', function(ev) {
+                ev.preventDefault();
+                ContextMenuManager.invokeMenu(ev.clientX, ev.clientY);
+            })
+        };
+    </script>
+</head>
+<body>
+    <nav class="circular-menu canvas-context-menu">
+        <div class="outer-circle"></div>
+        <div class="circle">
+            <a class="main-menu-item generate-pdf expandable" target="_blank"><div>Save to PDF</div></a>
+            <a class="main-menu-item shapes-menu expandable" target="_blank"><div>Add Shape or Connector</div></a>
+            <a class="main-menu-item add-note expandable"><div>Add Note</div></a>
+            <a class="main-menu-item add-label expandable"><div>Add Label</div></a>
+            <a class="main-menu-item add-action-list expandable"><div>Add Action List</div></a>
+            <a class="main-menu-item add-image expandable">
+                <div>Add Image</div>
+            </a>
+            <a class="main-menu-item add-video expandable"><div>Add Video</div></a>
+            <a class="main-menu-item upload-file expandable">
+                <div>Add File</div>
+            </a>
+            <a class="main-menu-item import-csv-txt expandable">
+                <div>Create notes from CSV or text file</div>
+            </a>
+
+            <a class="main-menu-item add-connector expandable"><div>Add Connector</div></a>
+            <a class="main-menu-item add-curved-connector expandable"><div>Add Curved Connector</div></a>
+            <a class="main-menu-item add-rectangle expandable"><div>Add Rectangle</div></a>
+            <a class="main-menu-item add-ellipse expandable"><div>Add Ellipse</div></a>
+
+            <a data-canvas="white" class="colors-menu-item bg-canvas"></a>
+            <a data-canvas="cork" class="colors-menu-item bg-canvas"></a>
+            <a data-canvas="blue" class="colors-menu-item bg-canvas"></a>
+            <a data-canvas="green" class="colors-menu-item bg-canvas"></a>
+            <a data-canvas="blue-lined" class="colors-menu-item bg-canvas"></a>
+            <a data-canvas="white-lined" class="colors-menu-item bg-canvas"></a>
+            <a data-canvas="blue-graph" class="colors-menu-item bg-canvas"></a>
+            <a data-canvas="white-graph" class="colors-menu-item bg-canvas"></a>
+        </div>
+
+        <div class="inner-circle">
+        </div>
+
+        <div class="menu-button">
+            <div class="colors-menu">
+                Change<br />Background
+            </div>
+            <div class="main-menu">
+            </div>
+        </div>
+    </nav>
+</body>
+</html>

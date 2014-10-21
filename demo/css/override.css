@@ -1,0 +1,237 @@
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+.circular-menu .menu-button .main-menu {
+  background-image: url(../img/menu.png);
+}
+
+
+.circular-menu .circle a:hover {
+  opacity: .7;
+}
+.circular-menu .inner-circle {
+  opacity: .5;
+  background-color: #fff;
+}
+
+.circular-menu .menu-button .colors-menu {
+  padding-top: 40px;
+  line-height: 1;
+  color: #0a4cae;
+}
+
+.circular-menu .menu-button .colors-menu:hover {
+  color: #0a5fae;
+}
+
+.circular-menu .menu-button .main-menu {
+  background-color: #bdf;
+}
+.circular-menu .menu-button .main-menu:hover {
+  background-color: #cbedff;
+}
+
+.circular-menu .circle a.bg-canvas {
+  display: block;
+  cursor: pointer;
+  background-size: auto;
+  background-repeat: repeat;
+}
+
+.circular-menu .circle a.bg-canvas[data-canvas="white"] {
+  background-color: #FFF;
+}
+.circular-menu .circle a.bg-canvas[data-canvas="cork"] {
+  background-color: #0FaFFc;
+}
+.circular-menu .circle a.bg-canvas[data-canvas="blue"] {
+  background-color: #FccFcF;
+}
+.circular-menu .circle a.bg-canvas[data-canvas="green"] {
+  background-color: #e0ffa3;
+}
+.circular-menu .circle a.bg-canvas[data-canvas="blue-lined"] {
+  background-color: #e0ffa3;
+}
+.circular-menu .circle a.bg-canvas[data-canvas="white-lined"] {
+  background-color: #008000;
+}
+.circular-menu .circle a.bg-canvas[data-canvas="blue-graph"] {
+  background-color: #ffd1ab;
+}
+.circular-menu .circle a.bg-canvas[data-canvas="white-graph"] {
+  background-color: #ffb0fb;
+}
+
+.circular-menu .circle a {
+  line-height: 1;
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: 16px 12px;
+  background-color: #2a99cd;
+}
+.circular-menu .circle a div {
+  margin-top: 12px;
+  margin-right: 5px;
+}
+
+.circular-menu .circle a.show-text-only {
+  background-image: url(../img/text.png);
+  background-position: 15px 18px;
+}
+.circular-menu .circle a.show-text-only:hover {
+  width: 150px !important;
+}
+.circular-menu .circle a.show-text-only div {
+  width: 90px;
+  margin-top: 13px;
+}
+
+.circular-menu .circle a.generate-pdf {
+  background-image: url(../img/generate_pdf.png);
+}
+.circular-menu .circle a.generate-pdf:hover {
+  width: 125px !important;
+}
+.circular-menu .circle a.generate-pdf div {
+  width: 75px;
+}
+
+.circular-menu .circle a.generate-photo {
+  background-image: url(../img/camera.png);
+  background-size: 38px;
+}
+.circular-menu .circle a.generate-photo:hover {
+  width: 125px !important;
+}
+.circular-menu .circle a.generate-photo div {
+  width: 75px;
+}
+
+.circular-menu .circle a.add-note {
+  background-image: url(../img/add_note.png);
+  background-size: 38px;
+  background-position: 13px 12px;
+}
+.circular-menu .circle a.add-note:hover {
+  width: 105px !important;
+}
+
+.circular-menu .circle a.add-label {
+  background-image: url(../img/text.png);
+  background-size: 32px;
+  background-position: 14px 15px;
+}
+.circular-menu .circle a.add-label:hover {
+  width: 105px !important;
+}
+
+.circular-menu .circle a.add-action-list {
+  background-image: url(../img/add_actionlist.png);
+  background-size: 38px;
+  background-position: 14px 15px;
+}
+.circular-menu .circle a.add-action-list:hover {
+  width: 157px !important;
+}
+.circular-menu .circle a.add-action-list div {
+  width: 100px !important;
+}
+
+.circular-menu .circle a.add-image {
+  background-image: url(../img/add_image.png);
+  background-size: 38px;
+  background-position: 12px 15px;
+}
+.circular-menu .circle a.add-image:hover {
+  width: 115px !important;
+}
+
+.circular-menu .circle a.add-video {
+  background-image: url(../img/add_video.png);
+  background-size: 34px;
+  background-position: 14px 13px;
+}
+.circular-menu .circle a.add-video:hover {
+  width: 115px !important;
+}
+
+.circular-menu .circle a.upload-file {
+  background-image: url(../img/upload_file.png);
+  background-size: 34px;
+  background-position: 13px 11px;
+}
+
+.circular-menu .circle a.import-csv-txt {
+  background-image: url(../img/import_from_csv.png);
+}
+.circular-menu .circle a.import-csv-txt.expandable:hover {
+  width: 220px !important;
+}
+.circular-menu .circle a.import-csv-txt div {
+  width: 170px;
+}
+
+.circular-menu .circle a.shapes-menu {
+  background-image: url(../img/shapes_white.png);
+  background-size: 37px;
+  background-position: 13px 13px;
+}
+.circular-menu .circle a.shapes-menu:hover,
+.circular-menu .circle a.shapes-menu div {
+  width: 180px !important;
+}
+
+.circular-menu .circle a.add-connector,
+.circular-menu .circle a.add-curved-connector {
+  background-size: 37px;
+  background-position: 13px 13px;
+}
+
+.circular-menu .circle a.add-connector {
+  background-image: url(../img/connector.png);
+}
+.circular-menu .circle a.add-connector:hover {
+  width: 150px !important;
+}
+
+.circular-menu .circle a.add-curved-connector {
+  background-image: url(../img/curved_connector.png);
+}
+
+.circular-menu .circle a.add-curved-connector div {
+  width: 170px;
+}
+.circular-menu .circle a.add-curved-connector:hover {
+  width: 170px !important;
+}
+
+.circular-menu .circle a.add-rectangle {
+  background-image: url(../img/rectangle.png);
+  background-size: 37px;
+  background-position: 11px 11px;
+}
+
+.circular-menu .circle a.add-rectangle div {
+  margin-top: 21px;
+  width: 150px;
+}
+.circular-menu .circle a.add-rectangle:hover {
+  width: 190px !important;
+}
+
+.circular-menu .circle a.add-ellipse {
+  background-image: url(../img/ellipse.png);
+  background-size: 45px;
+  background-position: 7px 7px;
+}
+
+.circular-menu .circle a.add-ellipse div {
+  margin-top: 21px;
+  width: 120px;
+}
+.circular-menu .circle a.add-ellipse:hover {
+  width: 160px !important;
+}
