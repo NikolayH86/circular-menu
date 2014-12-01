@@ -77,7 +77,7 @@
   background: linear-gradient(to right, #ffffab 0%,#7deeff 20%,#ffd1fd 40%,#e0ffa3 60%,#ffd1ab 80%,#f9f9f9 100%);
 }
 .circular-menu .menu-button .main-menu {
-  background-image: url(assets/images/context-menu/menu.png);
+  background-image: url(/assets/images/context-menu/menu.png);
   background-size: 24px 15px;
   background-position: center center;
   background-repeat: no-repeat;
